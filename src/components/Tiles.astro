@@ -1,0 +1,36 @@
+---
+import Tile from "./Tile.astro";
+import photo1 from "../images/photos/image-1.jpg";
+import photo3 from "../images/photos/image-3.jpg";
+import photo5 from "../images/photos/image-5.jpg";
+import photo4 from "../images/photos/image-4.jpg";
+import photo7 from "../images/photos/image-7.jpg";
+---
+
+<section class="relative mt-16 sm:mt-20 z-10 pb-16">
+  <ul class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <Tile
+      imageUrl={photo1}
+      woggleToRight
+      width="1080"
+      height="1080"
+      alt="Climbing"
+    />
+    <Tile imageUrl={photo3} width="1080" height="1080" alt="Climbing" />
+    <Tile
+      imageUrl={photo7}
+      woggleToRight
+      width="1080"
+      height="1080"
+      alt="Climbing"
+    />
+    <Tile imageUrl={photo4} width="1080" height="1080" alt="Climbing" />
+    <Tile
+      imageUrl={photo5}
+      woggleToRight
+      width="1080"
+      height="1080"
+      alt="Climbing"
+    />
+  </ul>
+</section>

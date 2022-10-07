@@ -1,0 +1,30 @@
+---
+interface Props {
+  image: string;
+  description: string;
+  width: number;
+  height: number;
+  woggleToRight?: boolean;
+}
+
+const { imageUrl, description, width, height, woggleToRight } =
+  Astro.props as Props;
+
+const classesWoggleLeft =
+  "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl rotate-2";
+const classesWoggleRight =
+  "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl -rotate-2";
+---
+
+<li class={woggleToRight ? classesWoggleRight : classesWoggleLeft}>
+  <img
+    alt={description}
+    sizes="(min-width: 640px) 18rem, 11rem"
+    src={imageUrl}
+    width={width}
+    height={height}
+    class="absolute inset-0 h-full w-full object-cover"
+    loading="lazy"
+    style="color:transparent"
+  />
+</li>
