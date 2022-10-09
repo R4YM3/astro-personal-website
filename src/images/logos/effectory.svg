@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="752px" height="1011px" viewBox="0 0 752 1011" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 752 0 752 1046 0 1046"></polygon>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-603.000000, -867.000000)" id="Logo">
+            <g transform="translate(603.000000, 867.000000)">
+                <path d="M359.005647,173.540167 C274.382842,173.540167 205.53717,242.387028 205.53717,327 C205.53717,411.624266 274.382842,480.471127 359.005647,480.471127 C443.628452,480.471127 512.474123,411.624266 512.474123,327 C512.474123,242.387028 443.628452,173.540167 359.005647,173.540167 Z M359.005647,654 C178.692328,654 32,507.316433 32,327 C32,146.694861 178.692328,0 359.005647,0 C539.318966,0 686,146.694861 686,327 C686,507.316433 539.318966,654 359.005647,654 Z" id="Fill-1" fill="#F9C947"></path>
+                <g id="Group-6">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-3"></g>
+                    <path d="M752,945.3125 L5.47942867,945.3125 C2.45313334,945.3125 0,942.876872 0,939.872171 L0,832.863858 C0,786.655205 37.7369857,749.1875 84.2777397,749.1875 L674.198991,749.1875 C717.163214,749.1875 752,783.764319 752,826.421962 L752,945.3125" id="Fill-4" fill="#F9C947" mask="url(#mask-2)"></path>
+                    <polyline id="Fill-5" fill="#F9C947" mask="url(#mask-2)" points="0 912.625 0 1010.6875 130.782609 918.733966 7.17372959 939.731323"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

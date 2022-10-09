@@ -1,39 +1,38 @@
 ---
+import Avatar from "../components/Avatar.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
 import Background from "../components/Background.astro";
 
 export interface Props {
-isHome?: boolean
+  isHome?: boolean;
 }
 
 const { isHome } = Astro.props as Props;
-
 ---
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Page title</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="generator" content={Astro.generator} />
-  <title>Page title</title>
-</head>
+  <body>
+    <header
+      class="relative z-20 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-12"
+    >
+      {!isHome && <Avatar className="absolute" />}
+      <Menu />
+    </header>
 
-<body>
-  <header class="relative z-10 flex gap-4 pt-12">
-    <div class="flex flex-1 justify-end md:justify-center">
-      <Menu hasAvatar={!isHome} />
-    </div>
-  </header>
+    <slot />
 
-  <slot />
+    <Footer />
 
-  <Footer />
-
-  <Background />
-</body>
-
+    <Background />
+  </body>
 </html>

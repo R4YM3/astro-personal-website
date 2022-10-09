@@ -1,0 +1,227 @@
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+
+import abnLogo from "../images/logos/abn.svg";
+import autoweekLogo from "../images/logos/autoweek.svg";
+import effectoryLogo from "../images/logos/effectory.svg";
+import goeievraagLogo from "../images/logos/goeievraag.svg";
+import kieskeurigLogo from "../images/logos/kieskeurig.svg";
+import klmLogo from "../images/logos/klm.svg";
+import rtlLogo from "../images/logos/rtl.svg";
+import rtlxlLogo from "../images/logos/rtlxl.svg";
+import sanomaLogo from "../images/logos/sanoma.svg";
+import schoolbankLogo from "../images/logos/schoolbank.svg";
+import videolandLogo from "../images/logos/videoland.svg";
+import vbkuLogo from "../images/logos/vbku.png";
+import wtfLogo from "../images/logos/wtf.svg";
+
+const hero = {
+  title: "Things I've made trying to put my dent in the universe.",
+  description:
+    "I've worked on tons of little projects over the years but these are the ones that I�m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+};
+
+const projects = [
+  {
+    image: {
+      src: rtlLogo,
+      alt: "RTL Account",
+      backgroundColor: "#000000"
+    },
+    title: "RTL.nl",
+    description:
+      "Contributed to Single Sign On solution for all RTL Nederland websites",
+    link: {
+      url: "https://account.rtl.nl",
+      label: "account.rtl.nl"
+    }
+  },
+  {
+    image: {
+      src: videolandLogo,
+      alt: "Videoland",
+      backgroundColor: "#000000"
+    },
+    title: "Videoland",
+    description:
+      "Contributed in onboarding flows like, authentication, payment and account.",
+    link: {
+      url: "https://www.videoland.com",
+      label: "videoland.com"
+    }
+  },
+  {
+    image: {
+      src: rtlxlLogo,
+      alt: "RTLXL"
+    },
+    title: "RTLXL",
+    description: "Maintenance and integrating flows from it to Videoland.",
+    link: {
+      label: "rtlxl.nl",
+      url: "https://www.rtlxl.nl"
+    }
+  },
+  {
+    image: {
+      src: effectoryLogo,
+      alt: "Beste Werkgever",
+      backgroundColor: "#ffffff"
+    },
+    title: "Beste Werkgever",
+    description: "UX and UI and converted it to quality Frontend code",
+    link: {
+      label: "beste-werkgevers.nl",
+      url: "http://beste-werkgevers.nl"
+    }
+  },
+  {
+    image: {
+      src: autoweekLogo,
+      alt: "AutoWeek",
+      backgroundColor: "#df1e26"
+    },
+    title: "AutoWeek",
+    description:
+      "Contributed in Front-end rebuild, Mijn AutoWeek and occasions marketplace.",
+    link: {
+      label: "autoweek.nl",
+      url: "https://www.autoweek.nl"
+    }
+  },
+
+  {
+    image: {
+      src: vbkuLogo,
+      alt: "Veen Bosch en Keuning",
+      backgroundColor: "#ffffff"
+    },
+    title: "Veen Bosch en Keuning",
+    description: "UX and UI and converted it to quality Frontend code",
+    link: {
+      label: "kieskeurig.nl",
+      url: "https://www.kieskeurig.nl"
+    }
+  },
+  {
+    image: {
+      src: kieskeurigLogo,
+      alt: "Kieskeurig",
+      backgroundColor: "#ef3939"
+    },
+    title: "Kieskeurig",
+    description:
+      "Contributed on to a dashboard system, which kieskeurig is using.",
+    link: {
+      label: "kieskeurig.nl",
+      url: "https://www.kieskeurig.nl"
+    }
+  },
+  {
+    image: {
+      src: schoolbankLogo,
+      alt: "Schoolbank",
+      backgroundColor: "#a22114"
+    },
+    title: "Schoolbank",
+    description:
+      "Consult and support Front-end developers in the rebuild of Schoolbank",
+    link: {
+      label: "schoolbank.nl",
+      url: "https://www.schoolbank.nl"
+    }
+  },
+  {
+    image: {
+      src: sanomaLogo,
+      alt: "Sanoma (DPG) Account",
+      backgroundColor: "#000000"
+    },
+    title: "Sanoma (DPG) Account",
+    description: "Contributed to make Gigya screensets themeable",
+    link: {
+      label: "rtlxl.nl",
+      url: "https://www.rtlxl.nl"
+    }
+  },
+  {
+    image: {
+      src: goeievraagLogo,
+      alt: "GoeieVraag",
+      backgroundColor: "#ffffff"
+    },
+    title: "GoeieVraag",
+    description: "Contributing to a new Frontend",
+    link: {
+      label: "goeievraag.nl",
+      url: "https://www.goeievraag.nl"
+    }
+  },
+
+  {
+    image: {
+      src: wtfLogo,
+      alt: "WTF",
+      backgroundColor: "#fef700"
+    },
+    title: "WTF",
+    description:
+      "Contributing by creating a new concept and building a proof of concept",
+    link: {
+      label: "wtf.nl",
+      url: "https://www.wtf.nl"
+    }
+  },
+
+  {
+    image: {
+      src: klmLogo,
+      alt: "Air France KLM"
+    },
+    title: "Air France KLM",
+    description: "Contributed by creating UX and UI designs and storyboards",
+    link: {
+      label: "bluebiz.nl",
+      url: "https://www.bluebiz.nl"
+    }
+  },
+
+  {
+    image: {
+      src: abnLogo,
+      alt: "ABN Amro"
+    },
+    title: "ABN Amro",
+    description: "Contributed by creating UX and UI designs and storyboards",
+    link: {
+      label: "bluebiz.nl",
+      url: "https://www.bluebiz.nl"
+    }
+  }
+];
+---
+
+<Layout>
+  <main class="relative z-10 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-24">
+    <Hero {...hero} />
+
+    <section class="mt-16 sm:mt-20">
+      <ul
+        role="list"
+        class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {
+          projects.map((project) => {
+            return (
+              <li class="group relative flex flex-col items-start">
+                <Project {...project} />
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+  </main>
+</Layout>

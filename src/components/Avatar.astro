@@ -2,20 +2,18 @@
 import avatar from "../images/avatar.jpg";
 
 export interface Props {
-  isLarge?: boolean
+  className?: string;
+  isLarge?: boolean;
 }
 
-const {
-  isLarge = false
-} = Astro.props as Props
+const { className, isLarge = false } = Astro.props as Props;
 
-const size = isLarge ? "h-16 w-16" : "h-10 w-10"
-
+const size = isLarge ? "h-16 w-16" : "h-10 w-10";
 ---
 
 <a
   aria-label="Home"
-  class={`block ${size} origin-left pointer-events-auto`}
+  class={`${className} block ${size} origin-left pointer-events-auto`}
   href="/"
 >
   <img
