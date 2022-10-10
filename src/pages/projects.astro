@@ -17,10 +17,11 @@ import videolandLogo from "../images/logos/videoland.svg";
 import vbkuLogo from "../images/logos/vbku.png";
 import wtfLogo from "../images/logos/wtf.svg";
 
+// TODO: years dynamic
 const hero = {
   title: "Things I've made trying to put my dent in the universe.",
   description:
-    "I've worked on tons of little projects over the years but these are the ones that I�m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+    "I've worked on tons of projects over the last 15 years but these are the ones that i'm most proud of. ... i have worked with ... inspiring collegues"
 };
 
 const projects = [
@@ -32,7 +33,7 @@ const projects = [
     },
     title: "RTL.nl",
     description:
-      "Contributed to Single Sign On solution for all RTL Nederland websites",
+      "Single Sign On account which is used by all the well known RTL websites, like buienradar.nl, videoland.com, rtlxl.nl. With each their own business logic and branding to take in account.",
     link: {
       url: "https://account.rtl.nl",
       label: "account.rtl.nl"
@@ -46,7 +47,7 @@ const projects = [
     },
     title: "Videoland",
     description:
-      "Contributed in onboarding flows like, authentication, payment and account.",
+      "Working on complex onboarding and payment flows. Steadily deprecating legacy code to new quality code. While Videoland beats record after record.",
     link: {
       url: "https://www.videoland.com",
       label: "videoland.com"
@@ -58,10 +59,22 @@ const projects = [
       alt: "RTLXL"
     },
     title: "RTLXL",
-    description: "Maintenance and integrating flows from it to Videoland.",
+    description: "Deprecating RTLXL's own subscription by pushing users to Videoland by implementing a carefully researched user journeys.",
     link: {
       label: "rtlxl.nl",
       url: "https://www.rtlxl.nl"
+    }
+  },
+  {
+    image: {
+      src: rtlxlLogo,
+      alt: "Dotfiles"
+    },
+    title: "Dotfiles",
+    description: "In one hour completly configure a fresh Linux or MacOS computer with all my personal preferences. From OS related to application like my sweet NeoVim code editor.",
+    link: {
+      label: "github.com/R4YM3/dotfiles-ansible",
+      url: "https://github.com/R4YM3/dotfiles-ansible"
     }
   },
   {
@@ -71,7 +84,7 @@ const projects = [
       backgroundColor: "#ffffff"
     },
     title: "Beste Werkgever",
-    description: "UX and UI and converted it to quality Frontend code",
+    description: "Listing closely to the whises of the new landing page for beste-werkgever.nl, then created a fresh design and converted it in quality frontend code",
     link: {
       label: "beste-werkgevers.nl",
       url: "http://beste-werkgevers.nl"
@@ -85,7 +98,7 @@ const projects = [
     },
     title: "AutoWeek",
     description:
-      "Contributed in Front-end rebuild, Mijn AutoWeek and occasions marketplace.",
+      "From rebuilding existing pages with a design overhaul to creating a complex occassion application.",
     link: {
       label: "autoweek.nl",
       url: "https://www.autoweek.nl"
@@ -99,12 +112,28 @@ const projects = [
       backgroundColor: "#ffffff"
     },
     title: "Veen Bosch en Keuning",
-    description: "UX and UI and converted it to quality Frontend code",
+    description: "Assigned with the mission to make paid royalties for authors more insightfull. Which ended in a well designed POC working on stub data based on the real deal.",
     link: {
       label: "kieskeurig.nl",
       url: "https://www.kieskeurig.nl"
     }
   },
+
+  {
+    image: {
+      src: autoweekLogo,
+      alt: "Tarmac",
+      backgroundColor: "#df1e26"
+    },
+    title: "Tarmac",
+    description:
+      "While carpooling my compantion hacked the car which we were travling in. So I could create a interactive interface which visualizes data given realtime by the car.",
+    link: {
+      isDisabled: true,
+      label: "bitbucket.org/.."
+    }
+  },
+
   {
     image: {
       src: kieskeurigLogo,
@@ -113,7 +142,7 @@ const projects = [
     },
     title: "Kieskeurig",
     description:
-      "Contributed on to a dashboard system, which kieskeurig is using.",
+      "Deliverd frontend code for django-arctic framework which helps with the creation of custom content management systems.",
     link: {
       label: "kieskeurig.nl",
       url: "https://www.kieskeurig.nl"
@@ -127,7 +156,7 @@ const projects = [
     },
     title: "Schoolbank",
     description:
-      "Consult and support Front-end developers in the rebuild of Schoolbank",
+      "Consulted Schoolbank how to rebuild the website frontend using a styleguide and contributed to the photo gallery.",
     link: {
       label: "schoolbank.nl",
       url: "https://www.schoolbank.nl"
@@ -136,14 +165,15 @@ const projects = [
   {
     image: {
       src: sanomaLogo,
-      alt: "Sanoma (DPG) Account",
+      alt: "Sanoma Account (DPG)",
       backgroundColor: "#000000"
     },
-    title: "Sanoma (DPG) Account",
-    description: "Contributed to make Gigya screensets themeable",
+    title: "Sanoma Account (DPG)",
+    description: "Made Sanoma Account themeable so it could be used on dozens well known websites, like NU.nl, Linda.nl, vtwonen.nl and more.",
     link: {
-      label: "rtlxl.nl",
-      url: "https://www.rtlxl.nl"
+      isDisabled: true,
+      label: "account.sanoma.com",
+      url: "https://account.sanoma.com"
     }
   },
   {
@@ -153,8 +183,9 @@ const projects = [
       backgroundColor: "#ffffff"
     },
     title: "GoeieVraag",
-    description: "Contributing to a new Frontend",
+    description: "Where to put questions which does not result into a factial answer? GoeieVraag! For this I contributed to digital a GoeieVraag Café. ",
     link: {
+      isDisabled: true,
       label: "goeievraag.nl",
       url: "https://www.goeievraag.nl"
     }
@@ -168,8 +199,9 @@ const projects = [
     },
     title: "WTF",
     description:
-      "Contributing by creating a new concept and building a proof of concept",
+      "NU.nl's playground. Pitched a new way how to present content which has proven to the lower bounce-rate.",
     link: {
+      isDisabled: true,
       label: "wtf.nl",
       url: "https://www.wtf.nl"
     }
@@ -181,10 +213,11 @@ const projects = [
       alt: "Air France KLM"
     },
     title: "Air France KLM",
-    description: "Contributed by creating UX and UI designs and storyboards",
+    description: "From storyboarding tutorials how Flying Blue works, to creating wireframes and designs for different websites.",
     link: {
-      label: "bluebiz.nl",
-      url: "https://www.bluebiz.nl"
+      isDisabled: true,
+      label: "your-bizbook.com",
+      url: "https://www.your-bizbook.nl"
     }
   },
 
@@ -194,10 +227,11 @@ const projects = [
       alt: "ABN Amro"
     },
     title: "ABN Amro",
-    description: "Contributed by creating UX and UI designs and storyboards",
+    description: "Created a new way how to communicate internally via a digizine. Swiping through a visually appealing magazine",
     link: {
-      label: "bluebiz.nl",
-      url: "https://www.bluebiz.nl"
+      isDisabled: true,
+      label: "digizine.abnamro.nl",
+      url: "https://digizine.abnamro.nl",
     }
   }
 ];
