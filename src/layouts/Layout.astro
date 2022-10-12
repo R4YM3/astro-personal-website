@@ -6,9 +6,10 @@ import Background from "../components/Background.astro";
 
 export interface Props {
   isHome?: boolean;
+  pageTitle: string;
 }
+const { isHome, pageTitle } = Astro.props as Props;
 
-const { isHome } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ const { isHome } = Astro.props as Props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Page title</title>
+    <title>{pageTitle } - Raymond Schweers</title>
   </head>
 
   <body>
