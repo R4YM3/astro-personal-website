@@ -1,4 +1,6 @@
 ---
+import Tags, { Props as ITags } from './Tags.astro';
+
 export interface Props {
   image: {
     src: string,
@@ -7,13 +9,14 @@ export interface Props {
   },
   title: string,
   description: string,
+  tags: ITags;
   link?: {
     url?: string,
     label?: string
   }
 }
 
-const { image, alt, title, description, link } = Astro.props as Props;
+const { image, alt, title, description, link, tags } = Astro.props as Props;
 const LinkElement = link.isDisabled ? 'span' : 'a';
 ---
 <div
@@ -44,8 +47,11 @@ const LinkElement = link.isDisabled ? 'span' : 'a';
 <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
   {description}
 </p>
+
+{ tags && <Tags tags={tags} />}
+
 <p
-  class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200"
+  class="relative z-10 mt-4 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200"
   >
   <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none"
     >
@@ -57,3 +63,4 @@ const LinkElement = link.isDisabled ? 'span' : 'a';
   </svg>
   { link?.label && (<span class:list={['ml-2', { 'line-through': link.isDisabled}]}>{link.label}</span>)}
 </p>
+

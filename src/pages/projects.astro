@@ -21,9 +21,9 @@ import wtfLogo from "../images/logos/wtf.svg";
 
 // TODO: years dynamic
 const hero = {
-  title: "Things I've made trying to put my dent in the universe.",
+  title: "Things I've worked on trying to put my dent in the universe.",
   description:
-    "I've worked with dozens inspiring people and on tons of projects over the last 15 years but these projects are the ones that i'm most proud of."
+    "I've worked with dozens inspiring people and on tons of projects over the last 15 years. These are the projects which i am most proud of."
 };
 
 const projects = [
@@ -36,10 +36,19 @@ const projects = [
     title: "RTL.nl",
     description:
       "Single Sign On account which is used by all the well known RTL websites, like buienradar.nl, videoland.com, rtlxl.nl. With each their own business logic and branding to take in account.",
+    tags: [
+      'NextJS',
+      'Styled Components',
+      'GraphQL',
+      'Tests',
+      'Cucumber',
+      'Open Connect ID',
+      'UX Design'
+    ],
     link: {
       url: "https://account.rtl.nl",
       label: "account.rtl.nl"
-    }
+    },
   },
   {
     image: {
@@ -50,6 +59,16 @@ const projects = [
     title: "Videoland",
     description:
       "Working on complex onboarding and payment flows. Steadily deprecating legacy code to new quality code. While Videoland beats record after record.",
+    tags: [
+      'React',
+      'Sass',
+      'REST',
+      'GraphQL',
+      'Tests',
+      'Cucumber',
+      'Gigya',
+      'Sitespect',
+    ],
     link: {
       url: "https://www.videoland.com",
       label: "videoland.com"
@@ -62,6 +81,14 @@ const projects = [
     },
     title: "RTLXL",
     description: "Deprecating RTLXL's own subscription by pushing users to Videoland by implementing a carefully researched user journeys.",
+    tags: [
+      'React',
+      'Angular',
+      'Micro frontend',
+      'Sass',
+      'REST',
+      'Tests'
+    ],
     link: {
       label: "rtlxl.nl",
       url: "https://www.rtlxl.nl"
@@ -74,6 +101,21 @@ const projects = [
     },
     title: "Dotfiles",
     description: "In one hour completly configure a fresh Linux or MacOS computer with all my personal preferences. From OS related to application like my sweet NeoVim code editor.",
+    tags: [
+      'Ansible',
+      'Bash',
+      'NeoVim',
+      'MacOS',
+      'Debian',
+      'Ubuntu',
+      'Gnome',
+      'tmux',
+      'zsh',
+      'Homebrew',
+      'apt',
+      'snap',
+      'git'
+    ],
     link: {
       label: "github.com/R4YM3/dotfiles-ansible",
       url: "https://github.com/R4YM3/dotfiles-ansible"
@@ -87,6 +129,17 @@ const projects = [
     },
     title: "Beste Werkgever",
     description: "Listing closely to the whises of the new landing page for beste-werkgever.nl, then created a fresh design and converted it in quality frontend code",
+    tags: [
+      'UX Design',
+      'UI Design',
+      'HTML',
+      'SASS',
+      'Foundation',
+      'Vanilla Javascript',
+      'Consulting',
+      'Photo/Video manipulation',
+
+    ],
     link: {
       label: "beste-werkgevers.nl",
       url: "http://beste-werkgevers.nl"
@@ -99,8 +152,19 @@ const projects = [
       backgroundColor: "#df1e26"
     },
     title: "AutoWeek",
-    description:
-      "From rebuilding existing pages with a design overhaul to creating a complex occassion application.",
+    description:"From rebuilding existing pages with a design overhaul to creating a complex occassion application.",
+    tags: [
+      'Vue',
+      'Vuex',
+      'UX Design',
+      'UI Design',
+      'Atomic Design',
+      'Styleguide',
+      'Sass',
+      'Gulp',
+      'RequireJS',
+      'Jinja'
+    ],
     link: {
       label: "autoweek.nl",
       url: "https://www.autoweek.nl"
@@ -115,6 +179,15 @@ const projects = [
     },
     title: "Veen Bosch en Keuning",
     description: "Assigned with the mission to make paid royalties of authors more insightfull. Which ended in a well designed POC working on stub data based on the real deal.",
+    tags: [
+      'Vue',
+      'Vuex',
+      'Rapid prototyping',
+      'UX Design',
+      'UI Design',
+      'HTML5',
+      'Sass'
+    ],
     link: {
       label: "kieskeurig.nl",
       url: "https://www.kieskeurig.nl"
@@ -130,6 +203,15 @@ const projects = [
     title: "Tarmac",
     description:
       "While carpooling my companion hacked the car which we were traveling in. So I could create a interactive interface which visualizes data given realtime by the car.",
+    tags: [
+      'HTML5',
+      'Webapp',
+      'UX Design',
+      'UI Design',
+      'Websockets',
+      'jQuery',
+      'Prototyping'
+    ],
     link: {
       isDisabled: true,
       label: "bitbucket.org/.."
@@ -145,6 +227,13 @@ const projects = [
     title: "Kieskeurig",
     description:
       "Deliverd frontend code for django-arctic framework which helps with the creation of custom content management systems.",
+    tags: [
+      'HTML5',
+      'Sass',
+      'Foundation',
+      'Gulp',
+      'jQuery'
+    ],
     link: {
       label: "kieskeurig.nl",
       url: "https://www.kieskeurig.nl"
@@ -159,6 +248,13 @@ const projects = [
     title: "Schoolbank",
     description:
       "Consulted Schoolbank how to rebuild the website frontend using a styleguide and contributed to Schoolbank's photo gallery.",
+    tags: [
+      'HTML5',
+      'Sass',
+      'Foundation',
+      'jQuery',
+      'Atomic design'
+    ],
     link: {
       label: "schoolbank.nl",
       url: "https://www.schoolbank.nl"
@@ -172,6 +268,12 @@ const projects = [
     },
     title: "Sanoma Account (DPG)",
     description: "Made Sanoma Account themeable so it could be used on dozens well known websites, like NU.nl, Linda.nl, vtwonen.nl and more.",
+    tags: [
+      'HTML5',
+      'Sass',
+      'Gigya',
+      'Gulp'
+    ],
     link: {
       isDisabled: true,
       label: "account.sanoma.com",
@@ -186,6 +288,13 @@ const projects = [
     },
     title: "GoeieVraag",
     description: "Where to put questions which does not result into a factial answer? GoeieVraag! For this I contributed to digital a GoeieVraag Café. ",
+    tags: [
+      'HTML5',
+      'Sass',
+      'Grunt',
+      'jQuery',
+      'Atomic design'
+    ],
     link: {
       isDisabled: true,
       label: "goeievraag.nl",
@@ -202,6 +311,14 @@ const projects = [
     title: "WTF",
     description:
       "NU.nl's playground. Pitched a new way how to present content which has proven to lower the bounce-rate.",
+    tags: [
+      'HTML5',
+      'Sass',
+      'Grunt',
+      'jQuery',
+      'UX Design',
+      'UI Design'
+    ],
     link: {
       isDisabled: true,
       label: "wtf.nl",
@@ -215,7 +332,12 @@ const projects = [
       alt: "Air France KLM"
     },
     title: "Air France KLM",
-    description: "From storyboarding video tutorials how Flying Blue works, to creating wireframes and designs for different websites.",
+    description: "From storyboarding video tutorials how Flying Blue works, to creating wireframes and designs for multiple KLM media.",
+    tags: [
+      'Storyboarding',
+      'UX Design',
+      'UI design',
+    ],
     link: {
       isDisabled: true,
       label: "your-bizbook.com",
@@ -230,6 +352,11 @@ const projects = [
     },
     title: "ABN Amro",
     description: "Created a new way how to communicate internally via a digizine. Swiping through a visually appealing magazine",
+    tags: [
+      'Vanilla Javascript',
+      'UI Design',
+      'UX Design'
+    ],
     link: {
       isDisabled: true,
       label: "digizine.abnamro.nl",
