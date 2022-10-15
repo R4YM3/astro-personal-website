@@ -1,37 +1,10 @@
 ---
-import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import Project from "../components/Project.astro";
-import {PROJECTS} from '../constants/projects'
-
-// TODO: years dynamic
-const hero = {
-  title: "Things I've worked on trying to put my dent in the universe.",
-  description:
-    "I've worked with dozens inspiring people and on tons of projects over the last 15 years. These are the projects which i am most proud of."
-};
-
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout pageTitle="Projects">
   <main class="relative z-10 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-24">
-    <Hero {...hero} />
-
-    <section class="my-16 sm:mt-20">
-      <ul
-        role="list"
-        class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {
-          PROJECTS.map((project) => {
-            return (
-              <li class="group relative flex flex-col items-start">
-                <Project {...project} />
-              </li>
-            );
-          })
-        }
-      </ul>
-    </section>
+    <Projects />
   </main>
 </Layout>
