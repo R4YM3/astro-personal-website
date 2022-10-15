@@ -1,13 +1,17 @@
 ---
-
 export interface Props {
-  tags: string[]
+  tags: string[];
 }
 
-const {tags} = Astro.props as Props
-
+const { tags } = Astro.props as Props;
 ---
 
 <ul class="mt-6 relative z-10">
-  {tags.map(tag => <li class="mb-2 mr-1 text-xs inline-flex items-center leading-sm px-3 py-1 rounded-full bg-gray-100 text-gray-700">{tag}</li>)}
+  {
+    tags.map((tag) => (
+      <li class="mb-2 mr-1 text-xs inline-flex items-center leading-sm px-3 py-1 rounded-full bg-gray-100 text-gray-700 dark:bg-zinc-800/90 dark:text-zinc-200">
+        {tag}
+      </li>
+    ))
+  }
 </ul>
