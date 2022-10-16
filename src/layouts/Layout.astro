@@ -9,7 +9,6 @@ export interface Props {
   pageTitle: string;
 }
 const { isHome, pageTitle } = Astro.props as Props;
-
 ---
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ const { isHome, pageTitle } = Astro.props as Props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle } - Raymond Schweers</title>
+    <title>{pageTitle} - Raymond Schweers</title>
   </head>
 
   <body>

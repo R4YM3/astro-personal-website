@@ -7,17 +7,19 @@ export interface Props {
   description: string;
   hasSocial: boolean;
   hasAvatar: boolean;
+  centered?: boolean;
 }
 
 const {
   title,
   description,
   hasSocial = false,
-  hasAvatar = false
+  hasAvatar = false,
+  centered = false
 } = Astro.props as Props;
 ---
 
-<header class="max-w-3xl">
+<header class:list={[{ "text-center": centered, "max-w-3xl": !centered }]}>
   {hasAvatar && <Avatar isLarge />}
 
   <h1
