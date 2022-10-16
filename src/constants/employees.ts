@@ -26,11 +26,13 @@ import rtlLogo from "../images/logos/rtl.svg";
 export const EMPLOYEES = [
   {
     src: brandshakersLogo,
-    alt: "Brandshakers"
+    alt: "Brandshakers",
+    backgroundColor: "#ffffff"
   },
   {
     src: flyershotsLogo,
-    alt: "Flyershots"
+    alt: "Flyershots",
+    backgroundColor: "#ffffff"
   },
   {
     src: shotByModelsLogo,
@@ -39,16 +41,19 @@ export const EMPLOYEES = [
   },
   {
     src: websightLogo,
-    alt: "Websight"
+    alt: "Websight",
+    backgroundColor: "#ffffff"
   },
 
   {
     src: sequentialLogo,
-    alt: "Sequential"
+    alt: "Sequential",
+    backgroundColor: "#ffffff"
   },
   {
     src: klmLogo,
-    alt: "KLM"
+    alt: "KLM",
+    backgroundColor: "#ffffff"
   },
   {
     src: sanomaLogo,
