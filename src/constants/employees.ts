@@ -7,7 +7,7 @@ import ebuddyLogo from "../images/clients/ebuddy.svg";
 import flyershotsLogo from "../images/clients/flyershots.png";
 import geekSquadLogo from "../images/clients/geek-squad.svg";
 import gemeenteHilversum from "../images/clients/gemeente-hilversum.svg";
-import hansTeeuwen from "../images/clients/hansTeeuwen.jpg";
+import hansTeeuwen from "../images/clients/hansteeuwen.jpg";
 import klantenBedrijfLogo from "../images/clients/klantenbedrijf.png";
 import kvkLogo from "../images/clients/kvk.svg";
 import mediamarktLogo from "../images/clients/mediamarkt.svg";
