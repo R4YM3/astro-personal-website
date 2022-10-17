@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  items: item[];
+}
+
+interface Item {
+  title: string;
+  description: string;
+}
+
+const { title, items } = Astro.props;
+---
+
+<section
+  aria-labelledby=":R6l6:"
+  class="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4 my-16 sm:mt-20"
+>
+  <header>
+    <h2 class="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+      {title}
+    </h2>
+  </header>
+
+  <dl
+    role="list"
+    class="md:col-span-3 group relative flex flex-col items-start"
+  >
+    {
+      items.map((item) => {
+        return (
+          <>
+            <dt class="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+              {item.title}
+            </dt>
+            <dd class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400 mb-8">
+              {item.description}
+            </dd>
+          </>
+        );
+      })
+    }
+  </dl>
+</section>

@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import DescriptionList from "../components/DescriptionList.astro";
+
+const hero = {
+  title: "Software I use, gadgets I love, and other things I recommend.",
+  description:
+    "I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I'm being productive when I'm really just procrastinating. Here's a big list of all of my favorite stuff."
+};
+
+const hardware = {
+  title: "workstation",
+  items: [
+    {
+      title: "Macbook Air, M1",
+      description:
+        "Tried Windows, Ubuntu and MacOS, but I always come back to MacOS, what can i say? It's just a breeze"
+    },
+    {
+      title: "49\" ultra wide screen",
+      description:
+        "Big, bigger, biggest, a lot of real estate when i have my vim full screen. Though screen sharing is a bit of a mess, but hey! This will resolve if everyone has ultra wide screen" 
+    },
+    {
+      title: "Custom WASD Mechanical keyboard",
+      description:
+        "Satification on every keystroke"
+    },
+    {
+      title: "Headphones",
+      description:
+        "headbanging on loseless music while developing, because my computer is sending my work vitamines to my headphone amplifier. The amplifier on it's turn sends it to my open back or my in-ear head phones."
+    },
+  ]
+};
+
+---
+
+<Layout pageTitle="Uses">
+  <main class="relative z-10 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-24">
+    <Hero {...hero} />
+    <DescriptionList {...hardware} />
+  </main>
+</Layout>
