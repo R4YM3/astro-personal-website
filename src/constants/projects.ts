@@ -286,7 +286,8 @@ export const PROJECTS = [
   {
     image: {
       src: klmLogo,
-      alt: "Air France KLM"
+      alt: "Air France KLM",
+      backgroundColor: "#FFFFFF"
     },
     title: "Air France KLM",
     description:
@@ -298,11 +299,11 @@ export const PROJECTS = [
       url: "https://www.your-bizbook.nl"
     }
   },
-
   {
     image: {
       src: abnLogo,
-      alt: "ABN Amro"
+      alt: "ABN Amro",
+      backgroundColor: "#FFFFFF"
     },
     title: "ABN Amro",
     description:
