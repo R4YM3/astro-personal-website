@@ -15,22 +15,53 @@ const hardware = {
     {
       title: "Macbook Air, M1",
       description:
-        "Tried Windows, Ubuntu and MacOS, but I always come back to MacOS, what can i say? It's just a breeze"
+        "Tried Windows, Ubuntu and MacOS, but I always come back to MacOS, what can i say? It's just a breeze."
     },
     {
       title: "49\" ultra wide screen",
       description:
-        "Big, bigger, biggest, a lot of real estate when i have my vim full screen. Though screen sharing is a bit of a mess, but hey! This will resolve if everyone has ultra wide screen" 
+        "Big, bigger, biggest, a big screen is indeed better, allthough screen sharing is a bit of a mess, but hey! This will resolve if everyone has an ultra wide screen." 
     },
     {
       title: "Custom WASD Mechanical keyboard",
       description:
-        "Satification on every keystroke"
+        "The texture when I touch one of the PBT keys, the tactical feedback when I am pressing a key, the sound not to loud but just perfect, oh, yes the satisfaction!"
     },
     {
       title: "Headphones",
       description:
-        "headbanging on loseless music while developing, because my computer is sending my work vitamines to my headphone amplifier. The amplifier on it's turn sends it to my open back or my in-ear head phones."
+        "My daily dose of lossless vitamines goes through some special instruments to enhance the recipe. It's starts going through an DAC, then a headphone amplifier which on it's turn end up in one of my collected headphones. This formula will make every developer headbanging healthy."
+    },
+  ]
+};
+
+const development = {
+  title: "Development tools",
+  items: [
+    {
+      title: "LunarVim",
+      description:
+        "\"What editor do you have? Is it a special vscode theme?\" It's LunarVim, which is an IDE layer for Neovim with sane defaults. It's blazing fast, faster then any of my previous Vim setups."
+    },
+    {
+      title: "tmux",
+      description:
+        "vim and tmux is pure joy, tmuxinator makes it even more fun. Just type a repository name and it will boot up vim, start local server, run tests, shows git log and so much more. With just one command, magic!"
+    },
+    {
+      title: "lazygit",
+      description:
+        "To look cool as a hacker like one of those hollywood movies, while i am just simply commiting some changes. Jokes aside, it's a perfect fit with vim and tmux. You never need to leave the terminal again."
+    },
+    {
+      title: "nodejs",
+      description:
+        "What can i say as a Frontend Developer, kind of obvious to play with nodejs"
+    },
+    {
+      title: "docker",
+      description:
+        "I like whales especially when they are hyped up. I hope I ever will see one IRL and swim with one, that would be something."
     },
   ]
 };
@@ -41,5 +72,6 @@ const hardware = {
   <main class="relative z-10 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-24">
     <Hero {...hero} />
     <DescriptionList {...hardware} />
+    <DescriptionList {...development} />
   </main>
 </Layout>
