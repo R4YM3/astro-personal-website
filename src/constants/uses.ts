@@ -1,5 +1,5 @@
 export const HARDWARE = {
-  title: "workstation",
+  title: "Workstation",
   items: [
     {
       title: "Macbook Air, M1",
