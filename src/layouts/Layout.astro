@@ -12,7 +12,7 @@ const { isHome, pageTitle } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full antialiased js-focus-visible">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -22,17 +22,22 @@ const { isHome, pageTitle } = Astro.props as Props;
   </head>
 
   <body class="bg-zinc-50 dark:bg-black">
-    <header
-      class="relative z-20 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-12"
-    >
-      {!isHome && <Avatar className="absolute" />}
-      <Menu />
-    </header>
+    <h2 class="hidden">{pageTitle}</h2>
 
-    <slot />
+    <div class="max-w-screen-xl mx-auto overflow-visible sm:px-20">
+      <div class="bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 mx-auto ">
+        <header
+          class="relative z-20 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-12"
+        >
+          {!isHome && <Avatar className="absolute" />}
+          <Menu />
+        </header>
 
-    <Footer />
+        <slot />
 
-    <Background />
+        <Footer />
+      </div>
+    </div>
+
   </body>
 </html>
