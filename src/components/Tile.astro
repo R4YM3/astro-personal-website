@@ -1,13 +1,13 @@
 ---
 interface Props {
   image: string;
-  description: string;
+  alt: string;
   width: number;
   height: number;
   woggleToRight?: boolean;
 }
 
-const { imageUrl, description, width, height, woggleToRight } =
+const { imageUrl, alt, width, height, woggleToRight } =
   Astro.props as Props;
 
 const classesWoggleLeft =
@@ -18,11 +18,11 @@ const classesWoggleRight =
 
 <li class={woggleToRight ? classesWoggleRight : classesWoggleLeft}>
   <img
-    alt={description}
+    alt={alt}
     src={imageUrl}
     width={width}
     height={height}
-    class="absolute inset-0 h-full w-full object-cover"
+    class="absolute inset1 h-full w-full object-cover"
     loading="lazy"
     style="color:transparent"
   />
