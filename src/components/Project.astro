@@ -18,6 +18,11 @@ export interface Props {
 
 const { image, alt, title, description, link, tags } = Astro.props as Props;
 const LinkElement = link.isDisabled ? "span" : "a";
+const LinkElementProps = !link.isDisabled ? {
+  href:link.url,
+  target:"_blank",
+  rel:"nofollow"
+} : {};
 ---
 
 <figure
@@ -37,7 +42,7 @@ const LinkElement = link.isDisabled ? "span" : "a";
     class="block absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"
   >
   </span>
-  <LinkElement href={link.url} target="_blank" rel="nofollow">
+  <LinkElement {...LinkElementProps}>
     <span
       class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl"
     ></span><span class="relative z-10">{title}</span>
