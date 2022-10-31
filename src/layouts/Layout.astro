@@ -7,8 +7,22 @@ import Background from "../components/Background.astro";
 export interface Props {
   isHome?: boolean;
   pageTitle: string;
+  description: string;
 }
-const { isHome, pageTitle } = Astro.props as Props;
+
+function trim_words(str, numWords) {
+    const words = str.split(/\s+/, numWords);
+    let sentence = words.join(" ");
+
+    if (sentence.length === str.length) {
+      return sentence
+    }
+
+    return sentence + ' ...';
+}
+
+const { isHome, pageTitle, description } = Astro.props as Props;
+const descriptionTrimmed = trim_words(description, 22);
 ---
 
 <!DOCTYPE html>
@@ -19,6 +33,7 @@ const { isHome, pageTitle } = Astro.props as Props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle} - Raymond Schweers</title>
+    <meta name="description" content={descriptionTrimmed}/>
   </head>
 
   <body class="bg-zinc-50 dark:bg-black overflow-x-hidden">

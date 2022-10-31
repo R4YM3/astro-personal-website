@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Projects from "../components/Projects.astro";
+import Projects, { hero } from "../components/Projects.astro";
 import Employees from "../components/Employees.astro";
 ---
 
-<Layout pageTitle="Projects">
+<Layout pageTitle="Projects" description={hero.description}>
   <main class="relative z-10 mx-auto max-w-7xl px-8 sm:px-16 lg:px-32 pt-24">
     <Projects />
     <Employees />
