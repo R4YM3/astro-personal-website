@@ -1,6 +1,6 @@
 # My personal website via Github pages
 
-see: [raymondschweers.nl](https://www.raymondschweers.nl).
+see: [raymondschweers.nl](https://www.raymondschweers.nl)
 
 ## 🧞 Commands
 
